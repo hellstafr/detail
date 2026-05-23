@@ -134,16 +134,34 @@ color:#37cfff;
 HERO
 ====================================================== */
 
-.hero{
-min-height:100vh;
-display:flex;
-align-items:center;
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 
-background:
-linear-gradient(rgba(0,0,0,.74),rgba(0,0,0,.84)),
-url('hero.jpeg') center/cover no-repeat;
+  background:
+    linear-gradient(rgba(0,0,0,.74), rgba(0,0,0,.84)),
+    url('hero.jpeg') center/cover no-repeat;
 
-padding-top:120px;
+  padding-top: 120px;
+}
+
+/* Планшеты и телефоны */
+@media (max-width: 768px) {
+  .hero {
+    background:
+      linear-gradient(rgba(0,0,0,.74), rgba(0,0,0,.84)),
+      url('heromobile.jpeg') center/cover no-repeat;
+  }
+}
+
+/* Очень маленькие телефоны */
+@media (max-width: 480px) {
+  .hero {
+    background:
+      linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.88)),
+      url('heromobile.jpeg') center/cover no-repeat;
+  }
 }
 
 .hero-content{
