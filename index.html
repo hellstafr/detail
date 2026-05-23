@@ -492,10 +492,10 @@ background:#171717;
 padding:25px 30px;
 border-radius:20px;
 display:flex;
-justify-content:space-between;
-align-items:center;
+flex-direction:column;
 gap:15px;
 font-size:22px;
+align-items:flex-start;
 }
 
 .price{
@@ -694,7 +694,7 @@ HERO
 <div class="hero-content">
 
 <div class="hero-sub">
-premium auto detailing
+Auto detailing
 </div>
 
 <h1>
@@ -704,7 +704,7 @@ premium auto detailing
 </h1>
 
 <p>
-Премиальный детейлинг, полировка,
+Детейлинг, полировка,
 керамика, химчистка и защита кузова
 для автомобилей, которые должны выглядеть идеально.
 </p>
@@ -778,10 +778,58 @@ SERVICES
 </h3>
 
 <p>
-Мойка авто, очистка стекол, чернение резины.
+Мойка авто, воск, уборка салона, очистка стекол, чернение резины.
 </p>
 
 <button class="btn" onclick="openModal('standart')">
+Подробнее
+</button>
+
+</div>
+
+</div>
+
+<div class="services">
+
+<div class="service-card">
+
+<img src="Komfort1.jpeg">
+
+<div class="service-content">
+
+<h3>
+Мойка авто "Комфорт"
+</h3>
+
+<p>
+Двухфазная мойка + мойка дисков, твердый воск, полная уборка салона и багажника, чернение резины, устранение неприятных запахов в салоне.
+</p>
+
+<button class="btn" onclick="openModal('Komfort')">
+Подробнее
+</button>
+
+</div>
+
+</div>
+
+<div class="Premium">
+
+<div class="service-card">
+
+<img src="Standart1.jpeg">
+
+<div class="service-content">
+
+<h3>
+Мойка авто "Премиум"
+</h3>
+
+<p>
+Двухфазная мойка, удаление битума и тирмозной пыли, твердый воск, антидождь, полная уборка салона и багажника, обработка пластика, резинок и шин.
+</p>
+
+<button class="btn" onclick="openModal('Premium')">
 Подробнее
 </button>
 
@@ -1002,7 +1050,7 @@ PRICE
 
 <div class="price-row">
 <div>Мойка автомобиля</div>
-<div>от 1 300 ₽</div>
+<div>от 1 000 ₽</div>
 </div>
   
 <div class="price-row">
@@ -1017,7 +1065,7 @@ PRICE
 
 <div class="price-row">
 <div>Химчистка салона</div>
-<div>от 10 000 ₽</div>
+<div>от 5 000 ₽</div>
 </div>
 
 <div class="price-row">
@@ -1026,18 +1074,13 @@ PRICE
 </div>
 
 <div class="price-row">
-<div>Оклейка пленкой</div>
-<div>от 60 000 ₽</div>
-</div>
-
-<div class="price-row">
 <div>Антидождь</div>
-<div>от 3 500 ₽</div>
+<div>от 2 000 ₽</div>
 </div>
   
 <div class="price-row">
 <div>Полировка фар</div>
-<div>от 3 000 ₽</div>
+<div>от 2 000 ₽</div>
 </div>
 
 </div>
